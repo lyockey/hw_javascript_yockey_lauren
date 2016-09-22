@@ -22,7 +22,7 @@ numba('university');
 ///////////////////////////////////
 
 function moviePrinter(movie) {
-    console.log(movie + ' is my favorite movie.');
+    console.log(movie + ' is a fantastic movie.');
 }
 
 function inception(display, favMovie) {
@@ -30,4 +30,4 @@ function inception(display, favMovie) {
     /*moviePrinter('Inception');*/
 }
 
-inception(moviePrinter, 'Inception');
+inception(moviePrinter, 'The Princess Bride');
