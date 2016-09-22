@@ -4,16 +4,30 @@ function howdy() {
 
 howdy();
 
-var numba = function (string) {
 
-    if (numba().length < 7) {
+var numba = function (string) {
+    if (string.length < 7) {
         console.log('What a short little word!');
-    } else if (numba().length > 7) {
+    } else if (string.length > 7) {
         console.log("I'm sorry, that's too many to count.");
     } else {
         console.log('7, what a perfect choice!');
     }
 };
 
-var string = numba('7', 'seventy', 'university');
-console.log(string);
+numba('7');
+numba('seventy');
+numba('university');
+
+///////////////////////////////////
+
+function moviePrinter(movie) {
+    console.log(movie + ' is my favorite movie.');
+}
+
+function inception(display, favMovie) {
+    display(favMovie);
+    /*moviePrinter('Inception');*/
+}
+
+inception(moviePrinter, 'Inception');
