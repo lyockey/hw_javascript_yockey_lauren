@@ -4,6 +4,7 @@ function howdy() {
 
 howdy();
 
+/////////////////////////////
 
 var numba = function (string) {
     if (string.length < 7) {
